@@ -1,0 +1,554 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    background-color: #0a1931;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.container1 {
+    margin-top: 100px;
+}
+
+
+/* navbar section */
+
+.container-head {
+    width: 100%;
+    text-align: center;
+    height: 70px;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.nav-bar li {
+    width: 180px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    justify-self: center;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    background-color: rgb(3, 42, 87);
+    border-bottom: 2px solid #3edbf0;
+}
+
+.nav-bar a {
+    color: #dbe6fd;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-bar a:visited {
+    color: #dbe6fd;
+}
+
+.nav-bar li:hover {
+    background-color: rgba(12, 115, 156, 0.5);
+    box-shadow: (5px, 5px, 10px, #000000);
+    transition: all 0.3s ease-in;
+}
+
+
+/* About me section */
+
+#nofill {
+    color: none;
+    font-family: "Train One", cursive;
+}
+
+.card {
+    background-color: rgba(51, 107, 177, 0.2);
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-me {
+    padding-top: 20px;
+    animation: slideInFromRight 2s ease-in;
+}
+
+.about-me h2,
+h3 {
+    text-align: center;
+}
+
+.container-aboutme {
+    margin: 0 auto;
+    display: block;
+    gap: 10px;
+    color: #dbe6fd;
+    text-align: left;
+    line-height: 2;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.prof-pic {
+    display: block;
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+    border: 2px solid #ffffff;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    animation: slideInFromLeft 2s ease-in;
+}
+
+.title h1 {
+    font-size: 5rem;
+    font-family: "Righteous", cursive;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: "Righteous", cursive;
+}
+
+.description {
+    width: 90%;
+    padding: 20px;
+    text-align: justify;
+    margin: auto;
+}
+
+.tech {
+    text-align: center;
+    display: grid;
+}
+
+.set-1 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.tech li {
+    padding: 10px;
+    list-style-type: none;
+}
+
+.tech i:hover {
+    color: #3edbf0;
+    transition: all 0.5s ease-in-out;
+}
+
+.projects {
+    width: 100%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+    color: #dbe6fd;
+}
+
+.triangle1 {
+    background-color: #0a66c2;
+    width: 100%;
+    height: 10%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.triangle2 {
+    background-color: #28a2e9;
+    width: 100%;
+    height: 10%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.container h2 {
+    color: #dbe6fd;
+}
+
+.project-items {
+    border-radius: 0;
+    font-size: 1rem;
+    width: 100%;
+    height: 175px;
+    margin: 50px auto;
+}
+
+.projects h4 {
+    font-size: 1.2rem;
+}
+
+.btn {
+    font-weight: bold;
+    font-size: 1rem;
+    width: 44%;
+    border-radius: 10px;
+    margin: 5px;
+    height: 55px;
+    background: none;
+    border: none;
+}
+
+.btn:hover {
+    border: 1px solid #3edbf0;
+    transition: all 0.1s ease-in;
+    width: 35%;
+    height: 40px;
+}
+
+.contact {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    color: #dbe6fd;
+}
+
+.footer {
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-family: "Lato", sans-serif;
+    color: #dbe6fd;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    left: 1%;
+    position: fixed;
+    z-index: 99;
+    bottom: 30%;
+    line-height: 4rem;
+}
+
+.social a {
+    color: #dbe6fd;
+}
+
+.fa-github-square:hover {
+    color: #000000;
+    font-size: 3rem;
+    transition: all 0.3s ease-in-out;
+    left: 2%;
+}
+
+.fa-twitter:hover {
+    color: #1da1f2;
+    font-size: 3rem;
+    transition: all 0.3s ease-in-out;
+    left: 2%;
+}
+
+.fa-linkedin:hover {
+    color: #0a66c2;
+    font-size: 3rem;
+    transition: all 0.3s ease-in-out;
+    left: 2%;
+}
+
+.fa-facebook:hover {
+    color: #1877f2;
+    font-size: 3rem;
+    transition: all 0.3s ease-in-out;
+    left: 2%;
+}
+
+.fa-instagram:hover {
+    color: #c32aa3;
+    font-size: 3rem;
+    left: 2%;
+    transition: all 0.3s ease-in-out;
+    left: 2%;
+}
+
+.fa-youtube:hover {
+    color: #ff0000;
+    font-size: 3rem;
+    transition: all 0.3s ease-in-out;
+    left: 2%;
+}
+
+
+/* Animations */
+
+@keyframes buttonBorderEnlarge {
+    0% {
+        width: 40%;
+        height: 55px;
+    }
+    25% {
+        width: 41%;
+        height: 56px;
+    }
+    50% {
+        width: 42%;
+        height: 57px;
+    }
+    75% {
+        width: 43%;
+        height: 58px;
+    }
+    100% {
+        width: 44%;
+        height: 59px;
+    }
+}
+
+@keyframes buttonBorderEnlargeS {
+    0% {
+        width: 90%;
+        height: 55px;
+    }
+    25% {
+        width: 91%;
+        height: 56px;
+    }
+    50% {
+        width: 92%;
+        height: 57px;
+    }
+    75% {
+        width: 93%;
+        height: 58px;
+    }
+    100% {
+        width: 94%;
+        height: 59px;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 85%;
+        margin: auto;
+        text-align: center;
+    }
+    .nav-bar {
+        width: 100%;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .nav-bar li {
+        width: 100%;
+        height: 20px;
+        background-color: #719cca;
+        text-align: center;
+    }
+    .card {
+        width: 100%;
+    }
+    .container1 {
+        margin-top: 200px;
+    }
+    .container-aboutme {
+        width: 100%;
+        line-height: 2;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .tech {
+        text-align: center;
+        font-size: 0.5rem;
+        margin: 0 auto;
+    }
+    .set-1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px;
+    }
+    .projects {
+        width: 100%;
+        display: block;
+    }
+    .project-items {
+        height: 250px;
+    }
+    .btn {
+        font-size: 0.9rem;
+        width: 90%;
+    }
+    .btn:hover {
+        transition: all 0.1s ease-in;
+    }
+    .contact {
+        width: 100%;
+    }
+    .social {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        position: relative;
+        justify-content: center;
+    }
+    .fa-github-square {
+        color: #000000;
+        padding: 5px;
+    }
+    .fa-twitter {
+        color: #1da1f2;
+        padding: 5px;
+    }
+    .fa-linkedin {
+        color: #0a66c2;
+        padding: 5px;
+    }
+    .fa-facebook {
+        color: #1877f2;
+        padding: 5px;
+    }
+    .fa-instagram {
+        color: #c32aa3;
+        padding: 5px;
+    }
+    .fa-youtube {
+        color: #ff0000;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    .nav-bar {
+        font-size: 1rem;
+        margin: 0 auto;
+        text-align: center;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .nav-bar li {
+        width: 180px;
+        height: 25px;
+        background-color: #719cca;
+    }
+    .container-aboutme {
+        width: 80%;
+        line-height: 2;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .tech {
+        text-align: center;
+        font-size: 0.5rem;
+        margin: 0 auto;
+    }
+    .set-1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px;
+    }
+    .projects {
+        width: 80%;
+        display: block;
+    }
+    .project-items {
+        height: 250px;
+    }
+    .btn {
+        font-size: 0.9rem;
+        width: 90%;
+    }
+    .contact {
+        width: 80%;
+    }
+    .social {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        position: relative;
+        justify-content: center;
+    }
+    .fa-github-square {
+        color: #000000;
+        padding: 5px;
+    }
+    .fa-twitter {
+        color: #1da1f2;
+        padding: 5px;
+    }
+    .fa-linkedin {
+        color: #0a66c2;
+        padding: 5px;
+    }
+    .fa-facebook {
+        color: #1877f2;
+        padding: 5px;
+    }
+    .fa-instagram {
+        color: #c32aa3;
+        padding: 5px;
+    }
+    .fa-youtube {
+        color: #ff0000;
+        padding: 5px;
+    }
+}

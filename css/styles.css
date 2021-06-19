@@ -28,17 +28,13 @@ body {
     z-index: 100;
 }
 
-ul {
-    list-style-type: none;
-}
-
 .nav-bar li {
-    width: 180px;
+    width: 150px;
     height: 30px;
     border-radius: 5px;
     padding: 5px;
     margin: 10px;
-    justify-self: center;
+    text-align: center;
 }
 
 .nav-bar {
@@ -49,6 +45,7 @@ ul {
     font-size: 1.5rem;
     background-color: rgb(3, 42, 87);
     border-bottom: 2px solid #3edbf0;
+    list-style-type: none;
 }
 
 .nav-bar a {
@@ -63,7 +60,7 @@ ul {
 
 .nav-bar li:hover {
     background-color: rgba(12, 115, 156, 0.5);
-    box-shadow: (5px, 5px, 10px, #000000);
+    box-shadow: (5px, 5px, 10px, #c7c1c1);
     transition: all 0.3s ease-in;
 }
 
@@ -371,7 +368,7 @@ h2 {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
     body {
         margin: 0;
         padding: 0;
@@ -390,7 +387,7 @@ h2 {
         margin: 0 auto;
     }
     .nav-bar li {
-        width: 100%;
+        width: 75%;
         height: 20px;
         background-color: #719cca;
         text-align: center;
@@ -399,7 +396,7 @@ h2 {
         width: 100%;
     }
     .container1 {
-        margin-top: 200px;
+        margin-top: 50px;
     }
     .container-aboutme {
         width: 100%;
@@ -467,7 +464,7 @@ h2 {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768) and(min-width: 1025px) {
     body {
         margin: 0;
         padding: 0;
@@ -478,12 +475,12 @@ h2 {
         text-align: center;
     }
     .nav-bar {
+        width: 100%;
         font-size: 1rem;
         margin: 0 auto;
         text-align: center;
-        display: grid;
-        gap: 10px;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        justify-content: center;
     }
     .nav-bar li {
         width: 180px;
